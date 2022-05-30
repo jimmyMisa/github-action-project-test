@@ -1,0 +1,12 @@
+name: Shell Commands
+
+on:
+  push:
+      branches:
+        - master
+jobs:
+    app-hello-world:
+        runs-on: ubuntu-latest
+        steps:
+          - name: testing
+            run: ls -al
