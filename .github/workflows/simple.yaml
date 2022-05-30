@@ -8,5 +8,11 @@ jobs:
     app-hello-world:
         runs-on: ubuntu-latest
         steps:
+          - name: pulling
+            run: |
+              git clone git@github:$GITHUB_REPOSITORY
+              git checkout $GITHUB_SHA
           - name: testing
             run: ls -al
+          - name: starting
+            run: php test.php
