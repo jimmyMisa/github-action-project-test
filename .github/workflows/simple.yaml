@@ -12,7 +12,7 @@ jobs:
             run: |
               echo $GITHUB_REPOSITORY
               echo "https://github.com/$GITHUB_REPOSITORY.git"
-              git clone https://github.com/$GITHUB_REPOSITORY.git
+              git clone https://github.com/$GITHUB_REPOSITORY.git .
               git checkout $GITHUB_SHA
           - name: testing
             run: ls -al
