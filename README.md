@@ -1,1 +1,1 @@
-# gitub-actino-project-test
+# github-action-project-test
